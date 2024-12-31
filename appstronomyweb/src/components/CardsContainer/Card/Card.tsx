@@ -1,9 +1,10 @@
 import React from "react";
 
 interface CardProps {
-  title: string;
-  imageUrl: string;
-  description: string;
+  title?: string;
+  imageUrl?: string;
+  description?: string;
+  
 }
 
 const Card: React.FC<CardProps> = ({ title, imageUrl, description }) => {

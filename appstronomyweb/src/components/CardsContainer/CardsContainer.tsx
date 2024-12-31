@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { fetchNasaData } from "../../services/nasaService"; // Asegúrate de que el servicio esté configurado correctamente
+import { fetchNasaData } from "../../services/nasaService"; 
 import Card from "./Card/Card";
 
 interface NasaData {
@@ -15,7 +15,7 @@ const CardContainer: React.FC = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const result = await fetchNasaData("planetary/apod", { date: "2024-01-01" }); // Cambia la fecha según tus necesidades
+        const result = await fetchNasaData("planetary/apod", { date: "2024-01-01" }); 
         setData({
           title: result.title,
           url: result.url,
